@@ -1,0 +1,213 @@
+@font-face{
+	font-family: 'Cairo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Cairo-Regular.ttf');
+    src: local('Cairo'), local('Cairo-Regular'), url('../fonts/Cairo-Regular.ttf') format('embedded-opentype'), url('../fonts/Cairo-Regular.ttf') format('ttf'),
+}
+body{
+	font-family: 'Cairo' , sans-serif;
+	overflow-x: hidden;
+	box-sizing: border-box
+}
+.img-fluid{
+    max-width: 100%;
+    max-height: 100%
+}
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li{
+    margin: 0;
+    padding: 0;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+header{
+    background-image: url(../img/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 0
+}
+header nav{
+    background-color: #008199;
+/*
+    position: fixed;
+    width: 100%;
+*/
+    height: 60px;
+    padding-top: 5px
+}
+nav .main-nav{
+    width: 30%
+}
+nav .main-nav ul li{
+    list-style: none
+}
+nav .main-nav ul li a,
+header .logo a{
+    text-decoration: none;
+    color: #fff;
+}
+nav .main-nav ul li a:hover{
+    color: #CA9600
+}
+header .head-tx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    transform: translate(-50px,-50px)
+}
+header .head-tx h1{
+    font-size: 60px;
+    letter-spacing: 4px
+}
+header .head-tx p{
+    font-size: 18px;
+    margin-top: -15px
+}
+button{
+    margin-top: 5px;
+    padding: 10px 15px;
+    background-color: #008199;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out
+}
+button:hover{
+    background-color: #CA9600;
+}
+.offer,
+.next{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: #000;
+    text-align: center
+}
+.services,
+.below{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    text-align: center;
+    color: #fff;
+    background-color: #008199;
+}
+h4{
+    color: #CA9600
+}
+.services .icon{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 7.5
+}
+.services .icons svg{
+    color: #008199;
+    font-size: 50px;
+    text-align: center;
+}
+.next{
+    background-image: url(../img/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 0
+}
+.next h1{
+    font-size: 45px
+}
+.next button:hover{
+    background-color: #004754
+}
+.portoflio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6em 0
+}
+.portoflio .imgs{
+    padding-top: 40px
+}
+.portoflio .img{
+    padding: 0;
+}
+.portoflio .img .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.portoflio .img img{
+    display: block;
+}
+.portoflio .img .tx{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #fff;
+    text-align: left
+}
+.below{
+    height: 50vh
+}
+.below .btn button{
+    padding: 15px 40px
+}
+.below .btn button:first-child{
+    background-color: #fff;
+    color: #000;
+    margin-right: 20px
+}
+.below .btn button:last-child{
+    background-color: #000;
+    color: #fff;
+}
+.below .btn button:last-child:hover{
+    background-color: #fff;
+    color: #000;
+}
+.below .btn button:first-child:hover{
+    background-color: #000;
+    color: #fff;
+}
+footer{
+    text-align: center;
+    padding: 20px 0
+}
+footer .icons svg{
+    color: #008199;
+    font-size: 40px;
+    margin-left: 15px
+}
